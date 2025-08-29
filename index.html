@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Service Directory</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <div class="navbar bg-white shadow-md">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl">
+        <span class="text-2xl">🇧🇩</span> Emergency Service
+      </a>
+    </div>
+    <div class="flex-none space-x-4">
+      <span id="heart-count" class="badge badge-outline">0 ❤️</span>
+      <span id="coin-count" class="badge badge-outline">100 🪙</span>
+      <span id="copy-count" class="badge badge-outline">0 Copy</span>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero min-h-[200px] bg-gradient-to-b from-green-700 to-green-500 text-white">
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <span class="text-6xl block mb-4">🇧🇩</span>
+        <h1 class="text-4xl font-bold">Emergency Service Directory</h1>
+        <p class="py-6 text-lg">Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Section -->
+  <div class="container mx-auto p-4 grid grid-cols-1 md:grid-cols-4 gap-4">
+    <!-- Card Section (Emergency Hotline) - spans 3 columns on md -->
+    <div class="md:col-span-3">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Card 1 -->
+        <div class="card bg-white shadow-xl">
+          <div class="card-body">
+            <div class="flex justify-between items-center">
+              <span class="text-4xl">🚨</span>
+              <button class="heart-btn btn btn-ghost text-xl">❤️</button>
+            </div>
+            <h2 class="card-title">National Emergency Number</h2>
+            <p class="text-gray-600">National Emergency Number</p>
+            <p class="text-2xl font-bold">999</p>
+            <span class="badge badge-primary">All</span>
+            <div class="card-actions justify-end mt-4">
+              <button class="copy-btn btn btn-outline" data-number="999">Copy</button>
+              <button class="call-btn btn btn-success" data-name="National Emergency Number" data-number="999">Call</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card bg-white shadow-xl">
+          <div class="card-body">
+            <div class="flex justify-between items-center">
+              <span class="text-4xl">🔥</span>
+              <button class="heart-btn btn btn-ghost text-xl">❤️</button>
+            </div>
+            <h2 class="card-title">Fire Service Number</h2>
+            <p class="text-gray-600">Fire Service Number</p>
+            <p class="text-2xl font-bold">999</p>
+            <span class="badge badge-primary">Fire</span>
+            <div class="card-actions justify-end mt-4">
+              <button class="copy-btn btn btn-outline" data-number="999">Copy</button>
+              <button class="call-btn btn btn-success" data-name="Fire Service Number" data-number="999">Call</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card bg-white shadow-xl">
+          <div class="card-body">
+            <div class="flex justify-between items-center">
+              <span class="text-4xl">🚑</span>
+              <button class="heart-btn btn btn-ghost text-xl">❤️</button>
+            </div>
+            <h2 class="card-title">Ambulance Service</h2>
+            <p class="text-gray-600">Ambulance Service</p>
+            <p class="text-2xl font-bold">999</p>
+            <span class="badge badge-primary">Health</span>
+            <div class="card-actions justify-end mt-4">
+              <button class="copy-btn btn btn-outline" data-number="999">Copy</button>
+              <button class="call-btn btn btn-success" data-name="Ambulance Service" data-number="999">Call</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card bg-white shadow-xl">
+          <div class="card-body">
+            <div class="flex justify-between items-center">
+              <span class="text-4xl">👩‍👧</span>
+              <button class="heart-btn btn btn-ghost text-xl">❤️</button>
+            </div>
+            <h2 class="card-title">Women & Child Helpline</h2>
+            <p class="text-gray-600">Women & Child Helpline</p>
+            <p class="text-2xl font-bold">109</p>
+            <span class="badge badge-primary">Help</span>
+            <div class="card-actions justify-end mt-4">
+              <button class="copy-btn btn btn-outline" data-number="109">Copy</button>
+              <button class="call-btn btn btn-success" data-name="Women & Child Helpline" data-number="109">Call</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card bg-white shadow-xl">
+          <div class="card-body">
+            <div class="flex justify-between items-center">
+              <span class="text-4xl">⚖️</span>
+              <button class="heart-btn btn btn-ghost text-xl">❤️</button>
+            </div>
+            <h2 class="card-title">Anti-Corruption Helpline</h2>
+            <p class="text-gray-600">Anti-Corruption Helpline</p>
+            <p class="text-2xl font-bold">106</p>
+            <span class="badge badge-primary">Govt</span>
+            <div class="card-actions justify-end mt-4">
+              <button class="copy-btn btn btn-outline" data-number="106">Copy</button>
+              <button class="call-btn btn btn-success" data-name="Anti-Corruption Helpline" data-number="106">Call</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card bg-white shadow-xl">
+          <div class="card-body">
+            <div class="flex justify-between items-center">
+              <span class="text-4xl">🚆</span>
+              <button class="heart-btn btn btn-ghost text-xl">❤️</button>
+            </div>
+            <h2 class="card-title">Bangladesh Railway Helpline</h2>
+            <p class="text-gray-600">Bangladesh Railway Helpline</p>
+            <p class="text-2xl font-bold">131</p>
+            <span class="badge badge-primary">Travel</span>
+            <div class="card-actions justify-end mt-4">
+              <button class="copy-btn btn btn-outline" data-number="131">Copy</button>
+              <button class="call-btn btn btn-success" data-name="Bangladesh Railway Helpline" data-number="131">Call</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card bg-white shadow-xl">
+          <div class="card-body">
+            <div class="flex justify-between items-center">
+              <span class="text-4xl">⚡</span>
+              <button class="heart-btn btn btn-ghost text-xl">❤️</button>
+            </div>
+            <h2 class="card-title">Electricity Helpline</h2>
+            <p class="text-gray-600">Electricity Helpline</p>
+            <p class="text-2xl font-bold">16116</p>
+            <span class="badge badge-primary">Utility</span>
+            <div class="card-actions justify-end mt-4">
+              <button class="copy-btn btn btn-outline" data-number="16116">Copy</button>
+              <button class="call-btn btn btn-success" data-name="Electricity Helpline" data-number="16116">Call</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card bg-white shadow-xl">
+          <div class="card-body">
+            <div class="flex justify-between items-center">
+              <span class="text-4xl">📞</span>
+              <button class="heart-btn btn btn-ghost text-xl">❤️</button>
+            </div>
+            <h2 class="card-title">Information Service</h2>
+            <p class="text-gray-600">Information Service</p>
+            <p class="text-2xl font-bold">333</p>
+            <span class="badge badge-primary">Info</span>
+            <div class="card-actions justify-end mt-4">
+              <button class="copy-btn btn btn-outline" data-number="333">Copy</button>
+              <button class="call-btn btn btn-success" data-name="Information Service" data-number="333">Call</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- History Section - spans 1 column -->
+    <div class="md:col-span-1 bg-white p-4 rounded-lg shadow">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-bold">Call History</h2>
+        <button id="clear-history" class="btn btn-sm btn-error">Clear</button>
+      </div>
+      <ul id="history-list" class="menu bg-base-100 w-full"></ul>
+    </div>
+  </div>
+
+  <script>
+    // Initial values
+    let hearts = 0;
+    let coins = 100;
+    let copies = 0;
+    const heartCount = document.getElementById('heart-count');
+    const coinCount = document.getElementById('coin-count');
+    const copyCount = document.getElementById('copy-count');
+    const historyList = document.getElementById('history-list');
+    const clearHistory = document.getElementById('clear-history');
+
+    // Update displays
+    function updateCounts() {
+      heartCount.textContent = `${hearts} ❤️`;
+      coinCount.textContent = `${coins} 🪙`;
+      copyCount.textContent = `${copies} Copy`;
+    }
+
+    // Heart buttons
+    document.querySelectorAll('.heart-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        hearts++;
+        updateCounts();
+      });
+    });
+
+    // Copy buttons
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const number = btn.dataset.number;
+        try {
+          await navigator.clipboard.writeText(number);
+          alert(`Number ${number} copied to clipboard!`);
+          copies++;
+          updateCounts();
+        } catch (err) {
+          alert('Failed to copy number.');
+        }
+      });
+    });
+
+    // Call buttons
+    document.querySelectorAll('.call-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const name = btn.dataset.name;
+        const number = btn.dataset.number;
+        if (coins < 20) {
+          alert('Insufficient coins to make the call.');
+          return;
+        }
+        alert(`Calling ${name} at ${number}`);
+        coins -= 20;
+        const time = new Date().toLocaleTimeString();
+        const li = document.createElement('li');
+        li.innerHTML = `<p>${name}<br>${number}<br>${time}</p>`;
+        historyList.appendChild(li);
+        updateCounts();
+      });
+    });
+
+    // Clear history
+    clearHistory.addEventListener('click', () => {
+      historyList.innerHTML = '';
+    });
+
+    updateCounts();
+  </script>
+</body>
+</html>
