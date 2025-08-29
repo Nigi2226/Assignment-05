@@ -9,29 +9,35 @@
 </head>
 <body class="bg-gray-100">
   <!-- Navbar -->
-  <div class="navbar bg-white shadow-md">
+  <div class="navbar bg-white shadow-md p-2">
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl">
-        <span class="text-2xl">🇧🇩</span> Emergency Service
+      <a class="btn btn-ghost text-xl flex items-center">
+        <img src="./assets/logo.png" alt="Emergency Service Logo" class="w-10 h-10 mr-2 " />
+        <span class="text-green-700">Emergency Service</span>
       </a>
     </div>
     <div class="flex-none space-x-4">
-      <span id="heart-count" class="badge badge-outline">0 ❤️</span>
-      <span id="coin-count" class="badge badge-outline">100 🪙</span>
-      <span id="copy-count" class="badge badge-outline">0 Copy</span>
+      <span id="heart-count" class="badge badge-outline bg-green-700 text-white">0 ❤️</span>
+      <span id="coin-count" class="badge badge-outline bg-green-700 text-white">100 🪙</span>
+      <span id="copy-count" class="badge badge-outline bg-green-700 text-white">2 Copy</span>
     </div>
   </div>
 
+  <!-- Logo Space Before Hero -->
+  <div class="h-10 bg-white"></div>
+
   <!-- Hero Section -->
-  <div class="hero min-h-[200px] bg-gradient-to-b from-green-700 to-green-500 text-white">
-    <div class="hero-content text-center">
-      <div class="max-w-md">
-        <span class="text-6xl block mb-4">🇧🇩</span>
+  <div class="hero min-h-[200px] bg-gradient-to-r from-green-900 via-green-500 to-green-900 text-white text-center">
+    <div class="hero-content w-3/4 mx-auto flex flex-col justify-center items-center">
+      <div class="max-w-md flex flex-col justify-center items-center">
+        <img src="./assets/logo-dark.png" alt="Central Logo" class="w-20 h-20 mb-4" />
         <h1 class="text-4xl font-bold">Emergency Service Directory</h1>
-        <p class="py-6 text-lg">Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</p>
+        <p class="py-2 text-lg">Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</p>
       </div>
     </div>
   </div>
+
+  
 
   <!-- Main Section -->
   <div class="container mx-auto p-4 grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -45,8 +51,8 @@
               <span class="text-4xl">🚨</span>
               <button class="heart-btn btn btn-ghost text-xl">❤️</button>
             </div>
-            <h2 class="card-title">National Emergency Number</h2>
-            <p class="text-gray-600">National Emergency Number</p>
+            <h2 class="card-title text-black-600">National Emergency Number</h2>
+            <p class="text-grey-600">National Emergency Number</p>
             <p class="text-2xl font-bold">999</p>
             <span class="badge badge-primary">All</span>
             <div class="card-actions justify-end mt-4">
@@ -63,8 +69,8 @@
               <span class="text-4xl">🔥</span>
               <button class="heart-btn btn btn-ghost text-xl">❤️</button>
             </div>
-            <h2 class="card-title">Fire Service Number</h2>
-            <p class="text-gray-600">Fire Service Number</p>
+            <h2 class="card-title text-black-600">Fire Service Number</h2>
+            <p class="text-grey-600">Fire Service Number</p>
             <p class="text-2xl font-bold">999</p>
             <span class="badge badge-primary">Fire</span>
             <div class="card-actions justify-end mt-4">
@@ -73,6 +79,22 @@
             </div>
           </div>
         </div>
+        <div class="card bg-white shadow-xl">
+          <div class="card-body">
+            <div class="flex justify-between items-center">
+              <span class="text-4xl">🚨</span>
+              <button class="heart-btn btn btn-ghost text-xl">❤️</button>
+            </div>
+            <h2 class="card-title text-black-600">Police Help Line Number</h2>
+            <p class="text-grey-600">Police Service Number</p>
+            <p class="text-2xl font-bold">999</p>
+            <span class="badge badge-primary">Police</span>
+            <div class="card-actions justify-end mt-4">
+              <button class="copy-btn btn btn-outline" data-number="999">Copy</button>
+              <button class="call-btn btn btn-success" data-name="Police HelpLine Number" data-number="999">Call</button>
+            </div>
+          </div>
+       </div>
 
         <!-- Card 3 -->
         <div class="card bg-white shadow-xl">
@@ -81,8 +103,8 @@
               <span class="text-4xl">🚑</span>
               <button class="heart-btn btn btn-ghost text-xl">❤️</button>
             </div>
-            <h2 class="card-title">Ambulance Service</h2>
-            <p class="text-gray-600">Ambulance Service</p>
+            <h2 class="card-title text-black-600">Ambulance Service</h2>
+            <p class="text-grey-600">Ambulance Service</p>
             <p class="text-2xl font-bold">999</p>
             <span class="badge badge-primary">Health</span>
             <div class="card-actions justify-end mt-4">
@@ -99,8 +121,8 @@
               <span class="text-4xl">👩‍👧</span>
               <button class="heart-btn btn btn-ghost text-xl">❤️</button>
             </div>
-            <h2 class="card-title">Women & Child Helpline</h2>
-            <p class="text-gray-600">Women & Child Helpline</p>
+            <h2 class="card-title text-black-600">Women & Child Helpline</h2>
+            <p class="text-grey-600">Women & Child Helpline</p>
             <p class="text-2xl font-bold">109</p>
             <span class="badge badge-primary">Help</span>
             <div class="card-actions justify-end mt-4">
@@ -117,8 +139,8 @@
               <span class="text-4xl">⚖️</span>
               <button class="heart-btn btn btn-ghost text-xl">❤️</button>
             </div>
-            <h2 class="card-title">Anti-Corruption Helpline</h2>
-            <p class="text-gray-600">Anti-Corruption Helpline</p>
+            <h2 class="card-title text-black-600">Anti-Corruption Helpline</h2>
+            <p class="text-grey-600">Anti-Corruption Helpline</p>
             <p class="text-2xl font-bold">106</p>
             <span class="badge badge-primary">Govt</span>
             <div class="card-actions justify-end mt-4">
@@ -135,8 +157,8 @@
               <span class="text-4xl">🚆</span>
               <button class="heart-btn btn btn-ghost text-xl">❤️</button>
             </div>
-            <h2 class="card-title">Bangladesh Railway Helpline</h2>
-            <p class="text-gray-600">Bangladesh Railway Helpline</p>
+            <h2 class="card-title text-black-600">Bangladesh Railway Helpline</h2>
+            <p class="text-grey-600">Bangladesh Railway Helpline</p>
             <p class="text-2xl font-bold">131</p>
             <span class="badge badge-primary">Travel</span>
             <div class="card-actions justify-end mt-4">
@@ -153,8 +175,8 @@
               <span class="text-4xl">⚡</span>
               <button class="heart-btn btn btn-ghost text-xl">❤️</button>
             </div>
-            <h2 class="card-title">Electricity Helpline</h2>
-            <p class="text-gray-600">Electricity Helpline</p>
+            <h2 class="card-title text-black-600">Electricity Helpline</h2>
+            <p class="text-grey-600">Electricity Helpline</p>
             <p class="text-2xl font-bold">16116</p>
             <span class="badge badge-primary">Utility</span>
             <div class="card-actions justify-end mt-4">
@@ -171,8 +193,8 @@
               <span class="text-4xl">📞</span>
               <button class="heart-btn btn btn-ghost text-xl">❤️</button>
             </div>
-            <h2 class="card-title">Information Service</h2>
-            <p class="text-gray-600">Information Service</p>
+            <h2 class="card-title text-black-600">Information Service</h2>
+            <p class="text-grey-600">Information Service</p>
             <p class="text-2xl font-bold">333</p>
             <span class="badge badge-primary">Info</span>
             <div class="card-actions justify-end mt-4">
@@ -183,6 +205,7 @@
         </div>
       </div>
     </div>
+    
 
     <!-- History Section - spans 1 column -->
     <div class="md:col-span-1 bg-white p-4 rounded-lg shadow">
